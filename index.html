@@ -1,38 +1,232 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
 
-  <title>Deric Patton's Homework 12</title>
-  <meta name="description" content="My crappy attempt at a webpage.">
-  <meta name="author" content="Deric Patton">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="My crappy attempt at a webpage.">
+<meta name="author" content="Deric Patton">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Deric Patton's Homework 12</title>
 
-
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link href='https://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <h1>Summary: Latitude  vs. X</h1>
-      <hr>
-      <img style="float: left; margin: 0px 15px 15px 0px;" src="images/citylatVSmaxtemp.png" width="350" />
-      <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-      <br>
-      <p>After assembling the dataset, we used Maplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptiuons of any trends and correlations witnessed.</p>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-    </div>
-    <div class="col-md-1" visibility:hidden>
+ 
+    
 
+
+  
+  <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+    
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand"><span>Lattitude</span></a>
+        </div>
+    
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home" class="smoothScroll">Home</a></li>
+            <li><a href="#comparison" class="smoothScroll">Comparison</a></li>
+            <li><a href="#data" class="smoothScroll">Data</a></li>
+          </ul>
+        </div>
+    
+      </div>
     </div>
-    <div class="col-md-3">
-      <h2>Visualizations</h2>
-      <hr>
+
+    <section id="home" class="main">
+        <div class="overlay"></div>
+     <div class="container">
+       <div class="row">
+   
+                  <div class="wow fadeInUp col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 col-sm-offset-0" data-wow-delay="0.2s">
+                      <img src="images/citylatVSmaxtemp.png" class="img-responsive" alt="Home">
+                  </div>
+   
+                  <div class="col-md-6 col-sm-7 col-xs-12">
+                       <div class="home-thumb">
+                            <h1 class="wow fadeInUp" data-wow-delay="0.6s">Latitude verus...</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.8s">The purpose of this project was to analyze how weather changes as you get closer to the equator.To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.8s">After assembling the dataset, we used Maplotlib to plot various aspects of the weather vs. latitude.Factors we looked at included: temperature, cloudiness, wind speed, and humidity.</p> 
+                            <p class="wow fadeInUp" data-wow-delay="0.8s">This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptiuons of any trends and correlations witnessed.</p>
+                       </div>
+                  </div>
+   
+       </div>
+     </div>
+   </section>
+
+   <section id="divider">
+      <div class="container">
+           <div class="row">
+  
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                     <h2 class="wow fadeInUp" data-wow-delay="0.4s">All plots were generated by matplotlib. </h2>
+                     <a href="https://matplotlib.org/" class="wow fadeInUp section-btn btn btn-success smoothScroll" data-wow-delay="0.8s">Learn More about Matplotlib</a>
+                     <h2 class="wow fadeInUp" data-wow-delay="0.4s">Website template from <a href="http://www.templatemo.com/tm-492-app-starter" target="_blank">templatemo</a></h2>
+                </div>
+  
+           </div>
+      </div>
+  </section>
+
+
+
+
+   <section id="comparison">
+      <div class="container">
+           <div class="row">
+ 
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                     <div class="section-title">
+                          <h1>Comparison</h1>
+                          <p class="wow fadeInUp" data-wow-delay="0.8s">Click on any plot to see a larger image.</p>
+                     </div>
+                </div>
+ 
+                
+                <div id="screenshot-carousel" class="owl-carousel">
+ 
+                     <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                          <a href="images/citylatVSmaxtemp.png" class="image-popup">
+                               <img src="images/citylatVSmaxtemp.png" class="img-responsive" alt="latitude versus maximum temperature">
+                          </a>
+                     </div>
+ 
+                     <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                          <a href="images/citylatVShumidity.png" class="image-popup">
+                               <img src="images/citylatVShumidity.png" class="img-responsive" alt="latitude versus humidity">
+                          </a>
+                     </div>
+ 
+                     <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                          <a href="images/citylatVScloudiness.png" class="image-popup">
+                               <img src="images/citylatVScloudiness.png" class="img-responsive" alt="latitude versus cloudiness">
+                          </a>
+                     </div>
+ 
+                     <div class="item col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.9s">
+                          <a href="images/citylatVSwindspeed.png" class="image-popup">
+                               <img src="images/citylatVSwindspeed.png" class="img-responsive" alt="latitude versus windspeed">
+                          </a>
+                     </div>
+ 
+ 
+                </div>
+ 
+            </div>
+        </div>
+  </section>
+
+
+
+
+
+ <section id="data">
+    <div class="container">
+         <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                   <div class="section-title">
+                        <h1>Data</h1>
+                        <hr>
+                   </div>
+              </div>
+
+              <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+                   <div class="pricing-plan">
+                        <div class="pricing-month">
+                             <h2>PDF</h2>
+                        </div>
+                        <div class="pricing-title">
+                             
+                        </div>
+                        <a href="data/data.pdf"><h3>View PDF</h3></a>
+                        
+                        
+                        
+                        
+                   </div>
+              </div>
+
+
+              <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+                  <div class="pricing-plan">
+                       <div class="pricing-month">
+                            <h2>Excel</h2>
+                       </div>
+                       <div class="pricing-title">
+                            
+                       </div>
+                                             
+                       <a href="data/cities.xlsx"><h3>Downloaad Excel Spreadsheet</h3></a>
+                       
+                       
+                  </div>
+             </div>
+             
+
+             <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.4s">
+                <div class="pricing-plan">
+                     <div class="pricing-month">
+                          <h2>CSV</h2>
+                     </div>
+                     <div class="pricing-title">
+                          
+                     </div>
+                                           
+                     <a href="data/cities.csv"><h3>Downloaad CSV file</h3></a>
+                     
+                     
+                </div>
+           </div>
+              
+         </div>
     </div>
-  </div>
+</section>
+
+
+
+
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
 
 
 
